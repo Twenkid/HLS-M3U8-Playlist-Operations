@@ -5,6 +5,10 @@ import os
 import argparse
 from os.path import dirname, abspath, join
 
+#Author: Todor Arnaudov
+#http://artificial-mind.blogspot.com
+#Experimental code
+
 LINUX = 0; WINDOWS = 1
 PLATFORM = WINDOWS
 Resolutions = [(960,540), (640,360), (1920,1080)]
@@ -16,7 +20,10 @@ IsIndependentSegment = True #ffmpeg cmds, needed for the master playlists tags M
 
 print(RootDir)
 
-def ParseInput():
+#TBD -- Construct an FFMPEG command with the proper parameters, see the end of the file;
+#sample also frame rate, to compute frame rate = 2*fps (each 2 sec, HLS standard)
+def ParseInput(): 
+  
   ap = argparse.ArgumentParser()
   ap.add_argument("-i", "--in", help = "Path to the input directory with all videos C:\\Source\\")
   ap.add_argument("-o", "--out", help = "Output path E:\\Stream\\")
