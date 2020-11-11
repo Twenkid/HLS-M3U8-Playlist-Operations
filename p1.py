@@ -5,6 +5,8 @@ import os
 import argparse
 from os.path import dirname, abspath, join
 
+#m3u8: https://github.com/globocom/m3u8
+#python -m pip install m3u8
 #Author: Todor Arnaudov
 #http://artificial-mind.blogspot.com
 #Experimental code
